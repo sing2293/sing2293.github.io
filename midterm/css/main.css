@@ -1,0 +1,173 @@
+/* setting up base rem value */
+
+html {
+  font-size: 16px;
+}
+
+/* background color selection for whole website */
+
+body {
+  background-color: #ebe5cb;
+}
+
+/* code for text over an image */
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(3px 2px 3px #EF590C);
+}
+
+/* designing for navigation section */
+
+nav a {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #EF590C;
+  text-decoration: none; 
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  overflow: auto;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: inline-block;
+  width: 25rem;
+  padding: 8px 16px;
+}
+
+/* adding a vertical line between navigation items.
+[i did find the easy way of doing this by using selector "not(:first-child)". but i couldn't understand this properly how it works. so, using a simple method */
+
+.contact, .services {
+  border-left: 2px solid #014747;
+}
+
+/* hover color change for navigation section */
+
+nav a:hover {
+  color: #014747;
+}
+
+/* designing for headings,paragraphs & list */
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: #014747;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #014747;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #014747;
+}
+
+h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #014747;
+}
+
+ul {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #014747;
+}
+
+h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #014747;
+}
+
+/* designing for form section */
+
+form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #014747;
+}
+
+/* outline & spacing in form section */
+
+.outline {
+  padding: 10px;
+  border: 1px solid
+}
+
+/* extending the text area */
+
+.resized {
+  width: 99.3%;
+  margin-top: 0.5%;
+  margin-bottom: 1%;
+}
+
+/* height for text area */
+
+textarea {
+  height: 100px;
+}
+
+/* margin & design for button */
+
+button {
+  margin-top: 1%;
+  background-color: #014747;
+  color: #ebe5cb;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #EF590C;
+  color: white
+}
+
+/* designing for copyright footer */
+
+footer { 
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #014747; 
+}
