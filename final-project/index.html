@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>final-project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5fbc25396.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <!-- nav section including main logo in it -->
       <nav>
+        <br>
         <div class="wrapper">
-        <img src="images/logo.png" alt="star-logo" class="sitelogo">
+        <div class="logobg"><img src="images/logo.png" alt="star-logo" class="sitelogo">
+        </div>
         <ul>
             <li>
                 <a href="#home" class="home">Home</a>
@@ -31,9 +37,11 @@
             </li>
         </ul>
         <!-- search area using form and button with magnify icon on it -->
-        <form class="search" action="index.html" method="get">
+        <form class="mainsearch" action="index.html" method="get">
             <input id="search" type="text" name="search" placeholder="Search" class="resized">
-            <button type="submit">Icon</button>
+            <button type="submit" class="navsearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </form>
         </div>
     </nav>
@@ -41,91 +49,138 @@
   <main>
     <!-- overlay section 1 over image attached -->
     <div class="section-1">
-        <img src="images/main-banner.jpg" alt="image_of_an_office" class="sec-1-image">
-        <div id="overlayed" class="wrapper">
+        <div id="overlayed">
+            <div class="wrapper">
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis quo vero autem unde quod, dolor laborum quidem ad commodi perferendis explicabo. Quibusdam reiciendis ratione magni modi labore eos ipsa.</p>
-            <button class="connect" type="button">Connect with us</button>
+            <button class="connect" type="button">Connect with us
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
         </div>
+        </div>
+        <img src="images/main-banner.jpg" alt="image_of_an_office" class="sec-1-image">
     </div>
+    
     <div class="section-2">
-        <img src="images/about-us.jpg" alt="image_of_a_tabletennis_table" class="part-1">
-        <div class="part-2">
+        <div class="wrapper">
+        <img src="images/about-us.jpg" alt="image_of_a_tabletennis_table" id="sec-2-image">
+        <div class="textcont">
             <h1>About Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente culpa, sit neque placeat, rem, nesciunt corrupti facilis tempora aut beatae explicabo! Totam blanditiis dignissimos nam architecto officiis debitis assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente culpa, sit neque placeat, rem, nesciunt corrupti facilis tempora aut beatae explicabo! Totam blanditiis dignissimos nam architecto officiis debitis assumenda.</p>
+        </div>
         </div>
     </div>
 <!-- Using grid here for services section below -->
+    <div class="wrapper">
     <h1>Our Services</h1>
-    <div class="wrapper">
+    <div class="servicesgrid">
+    <section class="a1">
+        <div>
         <img src="images/digital.jpg" alt="image_of_laptop_&_phone">
-        <div>
+        <div class="a1text">
             <h2>Digital Transformation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta labore, odit, in tenetur delectus quo temporibus ipsa, assumenda excepturi dolore. Repellat quidem nemo rerum accusamus illo eveniet optio praesentium.</p>
-            <button class="digitalplans" type="button">Digital Plans</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi gsdvsrvrssrvrsvdicta labore, odit, in tenetur delectus quo temporibus ipsa, assumenda excepturi dolore. Repellat quidem nemo rerum accusamus illo eveniet optio praesentium.loracnavnjlnamvnajenvjlnjlvvnljnvjlnvlj</p>
+            <button class="digitalplans" type="button">Digital Plans
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
         </div>
-    </div>
-    <div class="wrapper">
-        <img src="images/marketing.jpg" alt="image_of_a_laptop">
-        <div>
-            <h2>Marketing</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non et, vitae sunt provident eveniet id earum, ea itaque molestias voluptatibus vel quos excepturi saepe! Quas nulla amet hic porro!</p>
-            <button class="marketing" type="button">Marketing Plans</button>
         </div>
-    </div>
-    <div class="wrapper">
-        <img src="images/video.jpg" alt="image_of_a_phone">
-        <div>
-            <h2>Video Production</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati velit omnis in mollitia, consectetur cumque, tenetur totam eos laborum nesciunt incidunt illo fuga libero adipisci sit molestias voluptate perferendis suscipit?</p>
-            <button class="videoplans" type="button">Video Plans</button>
-        </div>
-    </div>
-    <div class="wrapper">
-        <img src="images/web.jpg" alt="image_of_a_phone_over_book">
-        <div>
-            <h2>Web Development</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus minus corrupti doloribus assumenda dignissimos? Autem dolorem, soluta maiores voluptates, eius dignissimos quasi, modi perspiciatis eaque dolores amet delectus totam tempora.</p>
-            <button class="webplans" type="button">Web Plans</button>
-        </div>
-    </div>
-    <div class="wrapper">
-        <img src="images/print.jpg" alt="image_of_roadside_printers">
-        <div>
-            <h2>Print</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laborum dolorem enim consequuntur minus voluptas. Voluptatum sit quae nulla animi ducimus, voluptate fugit, illum porro, laborum sapiente temporibus accusamus possimus.</p>
-            <button class="printplans" type="button">Print Plans</button>
-        </div>
-    </div>
+    </section>
+    <section class="a2">
     <div>
+        <img src="images/marketing.jpg" alt="image_of_a_laptop">
+        <div class="a2text">
+            <h2>Marketing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.ajvhcoajnjncjnajkncjnajncjnajncjnacjn Delectus nonsrvsrvsrvsrrkaefssrvrsvrsvrvssvrv et, vitae sunt provident eveniet id earum, ea itaque molestias voluptatibus vel quos excepturi saepe! Quas nulla amet hic porro!</p>
+            <button class="marketing" type="button">Marketing Plans
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+    <section class="a3">
+    <div>
+        <img src="images/video.jpg" alt="image_of_a_phone">
+        <div class="a3text">
+            <h2>Video Production</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisaljcoanocncjanjacncannicing elit. Obcaecati velitwljhgsoivhwriovjpiwjv omnis in mollitia, consectetur cumque, tenetur totam eos laborum nesciunt incidunt illo fuga libero adipisci sit molestias voluptate perferendis suscipit?</p>
+            <button class="videoplans" type="button">Video Plans
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+    <section class="a4">
+    <div>
+        <img src="images/web.jpg" alt="image_of_a_phone_over_book">
+        <div class="a4text">
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisajncjnjlalncjnajncjnacjnicing elit. Repellendus minus corrupti doloribus assumenda dignissimos? Autem dolorem, soluta maiores voluptates, eius dignissimos quasi, modi perspiciatis eaque dolores amet delectus totam tempora.</p>
+            <button class="webplans" type="button">Web Plans
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+    <section class="a5">
+    <div>
+        <img src="images/print.jpg" alt="image_of_roadside_printers">
+        <div class="a5text">
+            <h2>Print</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis lklwjsfvkcnwnvlknvknvaborum dolorem enim consequuntur minus voluptas. Voluptatum sit quae nulla animi ducimus, voluptate fugit, illum porro, laborum sapiente tjncjnajncjnacjnjncajemporibus accusamus possimus.</p>
+            <button class="printplans" type="button">Print Plans
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+    </div>
+    <br>
+    <section class="a6">
+    <div class="vision">
         <img src="images/vision.jpg" alt="images_of_paperboat">
-        <div>
+        <div class="wrapper">
             <h2>Our Vision</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odio quibusdam pariatur quis voluptates unde minus sed ratione quo impedit ad consequatur modi dolore voluptatum cumque eveniet perferendis, molestiae quisquam.</p>
-            <button class="learnmore" type="button">Learn More</button>
+            <button class="learnmore" type="button">Learn More
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
         </div>
     </div>
-    <h1>Our Team</h1>
-    <div>
-        <img src="images/john.jpg" alt="image_of_john">
+    </section>
+    </div>
+    <h1 class="wrapper">Our Team</h1>
+    <div class="team">
+    <section class="a7">
+    <div class="wrapper">
+        <img src="images/john.jpg" alt="image_of_john" class="team-1-img">
         <div class="team-1">
         <h2>John Doe</h2>
         <h3>CEO and Co-owner</h3>
+        <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam obcaecati aliquid, distinctio placeat, odit et architecto explicabo dolorum laudantium amet? Natus ab nulla consequatur praesentium labore unde iste modi.</p>
         </div>
     </div>
-    <div>
-        <img src="images/bob.jpg" alt="image_of_bob">
+    </section>
+    <section class="a8">
+    <div class="wrapper">
+        <img src="images/bob.jpg" alt="image_of_bob" class="team-2-img">
         <div class="team-2">
         <h2>Bob Rite</h2>
         <h3>CEO and Co-owner</h3>
+        <hr>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita atque distinctio, nemo veritatis nesciunt nihil nam perferendis, a fugit doloremque obcaecati repudiandae at consectetur rerum, adipisci exercitationem veniam odit repellendus!</p>
         </div>
     </div>
+    </section>
+    </div>
+    <div class="wrapper">
     <h1>Contact Us</h1>
     <!-- create a form section using get method -->
+    <div class="crid">
     <section>
-        <h2>Send us a message</h2>
+        <h2 class="message">Send us a message</h2>
         <form class="outline" action="index.html" method="get">
             <label for="fullname">Full Name</label ><br>
             <input id="fullname" type="text" name="fname" class="resized">
@@ -134,9 +189,8 @@
             <input id="email" type="text" name="email" class="resized">
             <br>
             <label for="message">Message</label><br>
-            <textarea id="message" name="message" class="resized"></textarea><br>
-            <br>
-            <button type="submit">SEND</button>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Send</button>
         </form>
     </section>
     <!-- table using table tags for operation timings -->
@@ -166,12 +220,15 @@
         <h2>Location</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22431.555641255592!2d-75.79303452568357!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711948233161!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+    </div>
+</div>
   </main>
   <!-- adding a copyright footer with unsplash link -->
   <footer>
-    &copy; Copyright Three Star Media, 2020
-    <br>
-    All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+    <div class="wrapper">
+    <p>&copy; Copyright Three Star Media, 2020</p>
+    <p>images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
   </footer>
 </body>
 </html>
